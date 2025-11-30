@@ -3,7 +3,7 @@ import java.net.URI
 import java.util.*
 
 plugins {
-	id("org.jetbrains.kotlin.jvm") version "2.2.20"
+	id("org.jetbrains.kotlin.jvm") version "2.3.0-RC"
 	id("org.ec4j.editorconfig") version "0.1.0"
 	id("idea")
 	signing
@@ -25,10 +25,10 @@ java {
 
 dependencies {
 	// jackson
-	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.20.0")
+	implementation("tools.jackson.module:jackson-module-kotlin:3.0.3")
 
 	// test
-    val junitVer = "6.0.0"
+    val junitVer = "6.0.1"
 	testImplementation("org.junit.jupiter:junit-jupiter:$junitVer")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher:$junitVer")
 }
