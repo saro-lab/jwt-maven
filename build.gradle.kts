@@ -1,9 +1,11 @@
+// ./gradlew wrapper --gradle-version latest
+
 import java.net.HttpURLConnection
 import java.net.URI
 import java.util.*
 
 plugins {
-	id("org.jetbrains.kotlin.jvm") version "2.3.0-RC"
+	id("org.jetbrains.kotlin.jvm") version "2.3.0"
 	id("org.ec4j.editorconfig") version "0.1.0"
 	id("idea")
 	signing
@@ -12,7 +14,7 @@ plugins {
 
 val jwtGroupId = "me.saro"
 val jwtArtifactId = "jwt"
-val jwtVersion = "7.0.2"
+val jwtVersion = "8.0.0"
 
 repositories {
 	mavenCentral()
@@ -82,7 +84,7 @@ publishing {
 				scm {
 					connection.set("scm:git:git://github.com/saro-lab/jwt.git")
 					developerConnection.set("scm:git:git@github.com:saro-lab/jwt.git")
-					url.set("https://github.com/saro-lab/jwt")
+					url.set("https://github.com/saro-lab/jwt-maven")
 				}
 			}
 		}
@@ -129,6 +131,6 @@ tasks.withType<Javadoc>().configureEach {
 }
 
 configure<JavaPluginExtension> {
-	sourceCompatibility = JavaVersion.VERSION_23
-	targetCompatibility = JavaVersion.VERSION_23
+	sourceCompatibility = JavaVersion.VERSION_25
+	targetCompatibility = JavaVersion.VERSION_25
 }

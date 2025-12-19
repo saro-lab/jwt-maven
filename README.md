@@ -1,6 +1,6 @@
 ### SARO JWT
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/me.saro/jwt/badge.svg)](https://maven-badges.herokuapp.com/maven-central/me.saro/jwt)
-[![GitHub license](https://img.shields.io/github/license/saro-lab/jwt.svg)](https://github.com/saro-lab/jwt/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/saro-lab/jwt.svg)](https://github.com/saro-lab/jwt-maven/blob/master/LICENSE)
 
 # Requirements
 - JDK 21+
@@ -9,7 +9,7 @@
 
 ## Gradle
 ```
-implementation('me.saro:jwt:7.0.2')
+implementation('me.saro:jwt:8.0.0')
 ```
 
 ## Maven
@@ -17,9 +17,16 @@ implementation('me.saro:jwt:7.0.2')
 <dependency>
   <groupId>me.saro</groupId>
   <artifactId>jwt</artifactId>
-  <version>7.0.2</version>
+  <version>8.0.0</version>
 </dependency>
 ```
+
+
+| version | JDK |
+|---------|-----|
+| 8.0.0   | 25+ |
+| 7.0.2   | 23+ |
+
 
 ## Support Algorithm
 | ES | ES256 | ES384 | ES512 |
