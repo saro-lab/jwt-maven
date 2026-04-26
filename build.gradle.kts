@@ -27,16 +27,12 @@ java {
 
 dependencies {
 	// jackson
-	implementation("tools.jackson.module:jackson-module-kotlin:3.0.3")
+	implementation("tools.jackson.module:jackson-module-kotlin:3.1.2")
 
 	// test
     val junitVer = "6.0.1"
 	testImplementation("org.junit.jupiter:junit-jupiter:$junitVer")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher:$junitVer")
-}
-
-tasks.withType<Test> {
-	useJUnitPlatform()
 }
 
 publishing {
@@ -82,8 +78,8 @@ publishing {
 					}
 				}
 				scm {
-					connection.set("scm:git:git://github.com/saro-lab/jwt.git")
-					developerConnection.set("scm:git:git@github.com:saro-lab/jwt.git")
+					connection.set("scm:git:git://github.com/saro-lab/jwt-maven.git")
+					developerConnection.set("scm:git:git@github.com:saro-lab/jwt-maven.git")
 					url.set("https://github.com/saro-lab/jwt-maven")
 				}
 			}
